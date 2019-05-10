@@ -2,7 +2,7 @@
 
 namespace Dhii\Collection\UnitTest;
 
-use Dhii\Collection\SetInterface as TestSubject;
+use Dhii\Collection\CountableSetInterface as TestSubject;
 use Xpmock\TestCase;
 use Exception as RootException;
 use PHPUnit_Framework_MockObject_MockObject as MockObject;
@@ -12,14 +12,14 @@ use PHPUnit_Framework_MockObject_MockObject as MockObject;
  *
  * @since 0.2
  */
-class SetInterfaceTest extends TestCase
+class CountableSetInterfaceTest extends TestCase
 {
     /**
      * The class name of the test subject.
      *
      * @since 0.2
      */
-    const TEST_SUBJECT_CLASSNAME = 'Dhii\Collection\SetInterface';
+    const TEST_SUBJECT_CLASSNAME = 'Dhii\Collection\CountableSetInterface';
 
     /**
      * Creates a new instance of the test subject.
@@ -118,12 +118,12 @@ class SetInterfaceTest extends TestCase
             'A valid instance of the test subject could not be created.'
         );
         $this->assertInstanceOf(
-            'Traversable',
+            'Dhii\Collection\CountableSetInterface',
             $subject,
             'Test subject does not implement required interface.'
         );
         $this->assertInstanceOf(
-            'Dhii\Collection\HasItemCapableInterface',
+            'Dhii\Collection\CountableListInterface',
             $subject,
             'Test subject does not implement required interface.'
         );
