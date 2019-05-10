@@ -5,12 +5,12 @@ namespace Dhii\Collection;
 /**
  * A countable map.
  *
- * @since [*next-version*]
+ * @since 0.2
  */
 interface CountableMapInterface extends
-    /* @since [*next-version*] */
+    /* @since 0.2 */
     CountableListInterface,
-    /* @since [*next-version*] */
+    /* @since 0.2 */
     MapInterface
 {
 }

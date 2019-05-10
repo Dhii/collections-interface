@@ -10,21 +10,21 @@ use PHPUnit_Framework_MockObject_MockObject as MockObject;
 /**
  * Tests {@see TestSubject}.
  *
- * @since [*next-version*]
+ * @since 0.2
  */
 class SetCapableMapInterfaceTest extends TestCase
 {
     /**
      * The class name of the test subject.
      *
-     * @since [*next-version*]
+     * @since 0.2
      */
     const TEST_SUBJECT_CLASSNAME = 'Dhii\Collection\SetCapableMapInterface';
 
     /**
      * Creates a new instance of the test subject.
      *
-     * @since [*next-version*]
+     * @since 0.2
      *
      * @param array $methods The methods to mock.
      *
@@ -46,7 +46,7 @@ class SetCapableMapInterfaceTest extends TestCase
      *
      * The resulting product will be a numeric array where the values of both inputs are present, without duplicates.
      *
-     * @since [*next-version*]
+     * @since 0.2
      *
      * @param array $destination The base array.
      * @param array $source      The array with more keys.
@@ -65,7 +65,7 @@ class SetCapableMapInterfaceTest extends TestCase
      * internal class, such as in the case with exceptions. Helps to avoid
      * writing hard-coded stubs.
      *
-     * @since [*next-version*]
+     * @since 0.2
      *
      * @param string $className      Name of the class for the mock to extend.
      * @param string $interfaceNames Names of the interfaces for the mock to implement.
@@ -88,7 +88,7 @@ class SetCapableMapInterfaceTest extends TestCase
     /**
      * Creates a new exception.
      *
-     * @since [*next-version*]
+     * @since 0.2
      *
      * @param string $message The exception message.
      *
@@ -106,7 +106,7 @@ class SetCapableMapInterfaceTest extends TestCase
     /**
      * Tests whether a valid instance of the test subject can be created.
      *
-     * @since [*next-version*]
+     * @since 0.2
      */
     public function testCanBeCreated()
     {

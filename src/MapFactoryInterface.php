@@ -7,7 +7,7 @@ use Dhii\Data\Container\ContainerFactoryInterface;
 /**
  * A factory that can create maps.
  *
- * @since [*next-version*]
+ * @since 0.2
  */
 interface MapFactoryInterface extends ContainerFactoryInterface
 {

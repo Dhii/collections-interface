@@ -8,12 +8,12 @@ use Traversable;
 /**
  * A traversable container.
  *
- * @since [*next-version*]
+ * @since 0.2
  */
 interface MapInterface extends
-    /* @since [*next-version*] */
+    /* @since 0.2 */
     Traversable,
-    /* @since [*next-version*] */
+    /* @since 0.2 */
     ContainerInterface
 {
 }

@@ -7,14 +7,14 @@ use RuntimeException;
 /**
  * Something that can have an item added.
  *
- * @since [*next-version*]
+ * @since 0.2
  */
 interface AddCapableInterface
 {
     /**
      * Adds an item to this instance.
      *
-     * @since [*next-version*]
+     * @since 0.2
      *
      * @param mixed $item The item to add.
      *

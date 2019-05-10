@@ -7,14 +7,14 @@ use RuntimeException;
 /**
  * Something that can check for the existence of an item.
  *
- * @since [*next-version*]
+ * @since 0.2
  */
 interface HasItemCapableInterface
 {
     /**
      * Checks whether this instance has the given item.
      *
-     * @since [*next-version*]
+     * @since 0.2
      *
      * @param mixed $item The item to check for.
      *

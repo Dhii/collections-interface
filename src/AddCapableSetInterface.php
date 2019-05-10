@@ -5,7 +5,7 @@ namespace Dhii\Collection;
 /**
  * A set that can have items added to it.
  *
- * @since [*next-version*]
+ * @since 0.2
  */
 interface AddCapableSetInterface extends
     SetInterface,

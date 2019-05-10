@@ -8,12 +8,12 @@ use Countable;
 /**
  * A list that can be counted.
  *
- * @since [*next-version*]
+ * @since 0.2
  */
 interface CountableListInterface extends
-    /* @since [*next-version*] */
+    /* @since 0.2 */
     Traversable,
-    /* @since [*next-version*] */
+    /* @since 0.2 */
     Countable
 {
 }

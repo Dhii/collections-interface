@@ -7,14 +7,14 @@ use RuntimeException;
 /**
  * Something that can set a value for a key.
  *
- * @since [*next-version*]
+ * @since 0.2
  */
 interface SetCapableInterface
 {
     /**
      * Sets a value for a key.
      *
-     * @since [*next-version*]
+     * @since 0.2
      *
      * @param string $key   The key to set the value for.
      * @param mixed  $value The value to set.

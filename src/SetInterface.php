@@ -7,12 +7,12 @@ use Traversable;
 /**
  * A list that can be checked for a key.
  *
- * @since [*next-version*]
+ * @since 0.2
  */
 interface SetInterface extends
-    /* @since [*next-version*] */
+    /* @since 0.2 */
     Traversable,
-    /* @since [*next-version*] */
+    /* @since 0.2 */
     HasItemCapableInterface
 {
 }

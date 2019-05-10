@@ -5,12 +5,12 @@ namespace Dhii\Collection;
 /**
  * A countable list that can be checked for a key.
  *
- * @since [*next-version*]
+ * @since 0.2
  */
 interface CountableSetInterface extends
-    /* @since [*next-version*] */
+    /* @since 0.2 */
     CountableListInterface,
-    /* @since [*next-version*] */
+    /* @since 0.2 */
     SetInterface
 {
 }

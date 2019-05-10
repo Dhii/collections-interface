@@ -5,7 +5,7 @@ namespace Dhii\Collection;
 /**
  * A map that can have a value set for a key.
  *
- * @since [*next-version*]
+ * @since 0.2
  */
 interface SetCapableMapInterface extends
     MapInterface,
