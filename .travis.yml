@@ -19,6 +19,7 @@ matrix:
   fast_finish: true
 
 before_script:
+  - phpenv config-add travis.php.ini
   - composer update --prefer-dist
 script:
   - vendor/bin/phpunit
