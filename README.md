@@ -19,7 +19,7 @@ A highly [ISP][ISP]-compliant collection of interfaces that represent collection
 - [`MapInterface`][MapInterface]: An iterable container.
 - [`CountableMapInterface`][CountableMapInterface]: A countable map.
 - [`SetCapableMapInterface`][SetCapableMapInterface]: A map that can have a value set for a key.
-- [`MapFactoryInterface`]: A factory of `MapInterface` objects.
+- [`MapFactoryInterface`][]: A factory of `MapInterface` objects.
 
 
 [Dhii]: https://github.com/Dhii/dhii
