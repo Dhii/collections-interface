@@ -3,9 +3,9 @@
 namespace Dhii\Collection\UnitTest;
 
 use Dhii\Collection\MapFactoryInterface as TestSubject;
-use Xpmock\TestCase;
 use Exception as RootException;
-use PHPUnit_Framework_MockObject_MockObject as MockObject;
+use PHPUnit\Framework\TestCase;
+use PHPUnit\Framework\MockObject\MockObject as MockObject;
 
 /**
  * Tests {@see TestSubject}.
@@ -15,26 +15,19 @@ use PHPUnit_Framework_MockObject_MockObject as MockObject;
 class MapFactoryInterfaceTest extends TestCase
 {
     /**
-     * The class name of the test subject.
-     *
-     * @since 0.2
-     */
-    const TEST_SUBJECT_CLASSNAME = 'Dhii\Collection\MapFactoryInterface';
-
-    /**
      * Creates a new instance of the test subject.
      *
      * @since 0.2
      *
      * @param array $methods The methods to mock.
      *
-     * @return TestSubject|MockObject The new instance.
+     * @return TestSubject&MockObject The new instance.
      */
     public function createInstance($methods = array())
     {
         $methods = $this->mergeValues($methods, array());
 
-        $mock = $this->getMockBuilder(static::TEST_SUBJECT_CLASSNAME)
+        $mock = $this->getMockBuilder(TestSubject::class)
             ->setMethods($methods)
             ->getMock();
 
@@ -92,7 +85,7 @@ class MapFactoryInterfaceTest extends TestCase
      *
      * @param string $message The exception message.
      *
-     * @return RootException|MockObject The new exception.
+     * @return RootException&MockObject The new exception.
      */
     public function createException($message = '')
     {
@@ -112,8 +105,7 @@ class MapFactoryInterfaceTest extends TestCase
     {
         $subject = $this->createInstance();
 
-        $this->assertInstanceOf(static::TEST_SUBJECT_CLASSNAME, $subject, 'A valid instance of the test subject could not be created.');
-        $this->assertInstanceOf('Dhii\Factory\FactoryInterface', $subject, 'Test subject does not implement required interface.');
-        $this->assertInstanceOf('Dhii\Data\Container\ContainerFactoryInterface', $subject, 'Test subject does not implement required interface.');
+        $this->assertInstanceOf(TestSubject::class, $subject, 'A valid instance of the test subject could not be created.');
+        $this->assertInstanceOf('Dhii\Collection\ContainerFactoryInterface', $subject, 'Test subject does not implement required interface.');
     }
 }
