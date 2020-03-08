@@ -5,6 +5,12 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [[*next-version*]] - YYYY-MM-DD
+### Removed
+- Support for PHP 5.x.
+- Obsolete dependencies, scripts and other info.
+
+### Added
+- Docker configuration.
 
 ## [0.2] - 2019-05-10
 Stable release.
