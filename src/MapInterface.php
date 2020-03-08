@@ -2,17 +2,18 @@
 
 namespace Dhii\Collection;
 
+use Psr\Container\ContainerInterface;
 use Traversable;
 
 /**
- * A list that can be checked for a key.
+ * A traversable container.
  *
  * @since 0.2
  */
-interface SetInterface extends
+interface MapInterface extends
     /* @since 0.2 */
     Traversable,
     /* @since 0.2 */
-    HasItemCapableInterface
+    ContainerInterface
 {
 }

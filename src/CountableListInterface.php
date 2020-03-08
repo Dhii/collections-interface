@@ -3,16 +3,17 @@
 namespace Dhii\Collection;
 
 use Traversable;
+use Countable;
 
 /**
- * A list that can be checked for a key.
+ * A list that can be counted.
  *
  * @since 0.2
  */
-interface SetInterface extends
+interface CountableListInterface extends
     /* @since 0.2 */
     Traversable,
     /* @since 0.2 */
-    HasItemCapableInterface
+    Countable
 {
 }

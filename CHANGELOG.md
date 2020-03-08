@@ -4,22 +4,34 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
-## 0.1.0 - 2016-11-09
-The initial release
+## [0.2] - 2019-05-10
+Stable release.
 
-## 0.1.1 - 2016-11-09
-Immediately released to fix absense of release data.
+## [0.2-alpha5] - 2018-04-26
+### Added
+- `MapFactoryInterface`.
+
+## [0.2-alpha4] - 2018-04-09
+### Fixed
+- Problem #15, where `AddCapableInterface#$add()` didn't accept the item.
+
+## [0.2-alpha3] - 2018-04-06
+### Changed
+- `CountableMapInterface` no longer extends `CountableSetInterface`, but still extends `CountableListInterface`.
 
 ### Added
-- Change log;
-- Next version placeholders replaced with version number.
+- `SetCapableMapInterface`.
 
-## 0.1.2 - 2016-11-16
-Adding some new functionality. This can be depended on, but will be split into
-more granular interfaces in the future.
+## [0.2-alpha2] - 2018-04-06
+### Changed
+- `SetInterface` no longer extends `HasCapableInterface`, but extends new `HasItemCapableInterface`
+- `MapInterface` no longer extends `SetInterface`, but is still traversable.
 
-### Added
-- `SetInterface` interface, which exposes all functionality of a standard interface.
+### Added 
+- `HasItemCapableInterface`.
+- `AddCapableInterface`.
+- `AddCapableSetInterface`.
+- `SetCapableInterface`.
 
-## Fixed
-- Next version placeholders in tests releasesd in version 0.1.0.
+## [0.2-alpha1] - 2018-04-06
+Initial version.
