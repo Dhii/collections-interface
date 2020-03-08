@@ -9,8 +9,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - Support for PHP 5.x.
 - Obsolete dependencies, scripts and other info.
 
+### Changed
+`MapFactoryInterface` now extends a new interface, leading to signature change.
+
 ### Added
 - Docker configuration.
+- `ContainerFactoryInterface`.
 
 ## [0.2] - 2019-05-10
 Stable release.
