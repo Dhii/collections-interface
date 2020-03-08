@@ -1,4 +1,5 @@
 <?php
+declare(strict_types=1);
 
 namespace Dhii\Collection;
 
@@ -22,5 +23,5 @@ interface HasItemCapableInterface
      *
      * @return bool True if the item exists; false otherwise.
      */
-    public function hasItem($item);
+    public function hasItem($item): bool;
 }
