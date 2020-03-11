@@ -18,6 +18,8 @@ interface AddCapableInterface
      *
      * @param mixed $item The item to add.
      *
+     * @return void
+     *
      * @throws RuntimeException If the item could not be added.
      */
     public function add($item);

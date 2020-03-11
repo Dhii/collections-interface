@@ -1,8 +1,9 @@
 <?php
+declare(strict_types=1);
 
 namespace Dhii\Collection;
 
-use Dhii\Data\Container\ContainerFactoryInterface;
+use Psr\Container\ContainerInterface;
 
 /**
  * A factory that can create maps.
@@ -12,9 +13,11 @@ use Dhii\Data\Container\ContainerFactoryInterface;
 interface MapFactoryInterface extends ContainerFactoryInterface
 {
     /**
-     * {@inheritdoc}
+     * Creates a map based on data in an array.
+     *
+     * @param array $data The data to base the map on.
      *
      * @return MapInterface The new map.
      */
-    public function make($config = null);
+    public function createFromArray(array $data): ContainerInterface;
 }

@@ -4,7 +4,6 @@
 [![Code Climate](https://codeclimate.com/github/Dhii/collections-interface/badges/gpa.svg)](https://codeclimate.com/github/Dhii/collections-interface)
 [![Test Coverage](https://codeclimate.com/github/Dhii/collections-interface/badges/coverage.svg)](https://codeclimate.com/github/Dhii/collections-interface/coverage)
 [![Latest Stable Version](https://poser.pugx.org/dhii/collections-interface/version)](https://packagist.org/packages/dhii/collections-interface)
-[![This package complies with Dhii standards](https://img.shields.io/badge/Dhii-Compliant-green.svg?style=flat-square)][Dhii]
 
 A highly [ISP][ISP]-compliant collection of interfaces that represent collections.
 
@@ -19,6 +18,7 @@ A highly [ISP][ISP]-compliant collection of interfaces that represent collection
 - [`MapInterface`][MapInterface]: An iterable container.
 - [`CountableMapInterface`][CountableMapInterface]: A countable map.
 - [`SetCapableMapInterface`][SetCapableMapInterface]: A map that can have a value set for a key.
+- [`ContainerFactoryInterface`][]: A factory of `ContainerInterface` objects.
 - [`MapFactoryInterface`][]: A factory of `MapInterface` objects.
 
 
@@ -36,3 +36,4 @@ A highly [ISP][ISP]-compliant collection of interfaces that represent collection
 [SetCapableInterface]:                              src/SetCapableInterface.php
 [SetCapableMapInterface]:                           src/SetCapableMapInterface.php
 [`MapFactoryInterface`]:                            src/MapFactoryInterface.php
+[`ContainerFactoryInterface`]:                      src/ContainerFactoryInterface.php

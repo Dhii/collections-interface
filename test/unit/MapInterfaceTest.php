@@ -3,9 +3,9 @@
 namespace Dhii\Collection\UnitTest;
 
 use Dhii\Collection\MapInterface as TestSubject;
-use Xpmock\TestCase;
 use Exception as RootException;
-use PHPUnit_Framework_MockObject_MockObject as MockObject;
+use PHPUnit\Framework\TestCase;
+use PHPUnit\Framework\MockObject\MockObject as MockObject;
 
 /**
  * Tests {@see TestSubject}.
@@ -15,26 +15,19 @@ use PHPUnit_Framework_MockObject_MockObject as MockObject;
 class MapInterfaceTest extends TestCase
 {
     /**
-     * The class name of the test subject.
-     *
-     * @since 0.2
-     */
-    const TEST_SUBJECT_CLASSNAME = 'Dhii\Collection\MapInterface';
-
-    /**
      * Creates a new instance of the test subject.
      *
      * @since 0.2
      *
      * @param array $methods The methods to mock.
      *
-     * @return TestSubject|MockObject The new instance.
+     * @return TestSubject&MockObject The new instance.
      */
     public function createInstance($methods = array())
     {
         $methods = $this->mergeValues($methods, array());
 
-        $mock = $this->getMockBuilder(static::TEST_SUBJECT_CLASSNAME)
+        $mock = $this->getMockBuilder(TestSubject::class)
             ->setMethods($methods)
             ->getMock();
 
@@ -92,7 +85,7 @@ class MapInterfaceTest extends TestCase
      *
      * @param string $message The exception message.
      *
-     * @return RootException|MockObject The new exception.
+     * @return RootException&MockObject The new exception.
      */
     public function createException($message = '')
     {
@@ -113,7 +106,7 @@ class MapInterfaceTest extends TestCase
         $subject = $this->createInstance();
 
         $this->assertInstanceOf(
-            static::TEST_SUBJECT_CLASSNAME,
+            TestSubject::class,
             $subject,
             'A valid instance of the test subject could not be created.'
         );
