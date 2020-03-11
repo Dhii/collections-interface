@@ -2,7 +2,6 @@
 
 namespace Dhii\Collection;
 
-use Psr\Container\ContainerInterface;
 use Traversable;
 
 /**
