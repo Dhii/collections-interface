@@ -5,6 +5,8 @@ namespace Dhii\Collection\UnitTest;
 use Dhii\Collection\MapInterface as TestSubject;
 use PHPUnit\Framework\TestCase;
 use PHPUnit\Framework\MockObject\MockObject as MockObject;
+use Psr\Container\ContainerInterface;
+use Traversable;
 
 /**
  * Tests {@see TestSubject}.
@@ -43,12 +45,12 @@ class MapInterfaceTest extends TestCase
             'A valid instance of the test subject could not be created.'
         );
         $this->assertInstanceOf(
-            'Psr\Container\ContainerInterface',
+            ContainerInterface::class,
             $subject,
             'Test subject does not implement required interface.'
         );
         $this->assertInstanceOf(
-            'Traversable',
+            Traversable::class,
             $subject,
             'Test subject does not implement required interface.'
         );

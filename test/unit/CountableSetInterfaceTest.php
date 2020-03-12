@@ -2,7 +2,9 @@
 
 namespace Dhii\Collection\UnitTest;
 
+use Dhii\Collection\CountableListInterface;
 use Dhii\Collection\CountableSetInterface as TestSubject;
+use Dhii\Collection\SetInterface;
 use PHPUnit\Framework\TestCase;
 use PHPUnit\Framework\MockObject\MockObject as MockObject;
 
@@ -43,12 +45,12 @@ class CountableSetInterfaceTest extends TestCase
             'A valid instance of the test subject could not be created.'
         );
         $this->assertInstanceOf(
-            'Dhii\Collection\CountableSetInterface',
+            SetInterface::class,
             $subject,
             'Test subject does not implement required interface.'
         );
         $this->assertInstanceOf(
-            'Dhii\Collection\CountableListInterface',
+            CountableListInterface::class,
             $subject,
             'Test subject does not implement required interface.'
         );

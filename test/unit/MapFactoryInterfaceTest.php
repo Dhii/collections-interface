@@ -2,6 +2,7 @@
 
 namespace Dhii\Collection\UnitTest;
 
+use Dhii\Collection\ContainerFactoryInterface;
 use Dhii\Collection\MapFactoryInterface as TestSubject;
 use PHPUnit\Framework\TestCase;
 use PHPUnit\Framework\MockObject\MockObject as MockObject;
@@ -38,6 +39,6 @@ class MapFactoryInterfaceTest extends TestCase
         $subject = $this->createInstance();
 
         $this->assertInstanceOf(TestSubject::class, $subject, 'A valid instance of the test subject could not be created.');
-        $this->assertInstanceOf('Dhii\Collection\ContainerFactoryInterface', $subject, 'Test subject does not implement required interface.');
+        $this->assertInstanceOf(ContainerFactoryInterface::class, $subject, 'Test subject does not implement required interface.');
     }
 }

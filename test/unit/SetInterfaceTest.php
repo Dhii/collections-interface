@@ -2,9 +2,11 @@
 
 namespace Dhii\Collection\UnitTest;
 
+use Dhii\Collection\HasItemCapableInterface;
 use Dhii\Collection\SetInterface as TestSubject;
 use PHPUnit\Framework\TestCase;
 use PHPUnit\Framework\MockObject\MockObject as MockObject;
+use Traversable;
 
 /**
  * Tests {@see TestSubject}.
@@ -43,12 +45,12 @@ class SetInterfaceTest extends TestCase
             'A valid instance of the test subject could not be created.'
         );
         $this->assertInstanceOf(
-            'Traversable',
+            Traversable::class,
             $subject,
             'Test subject does not implement required interface.'
         );
         $this->assertInstanceOf(
-            'Dhii\Collection\HasItemCapableInterface',
+            HasItemCapableInterface::class,
             $subject,
             'Test subject does not implement required interface.'
         );
