@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Removed
 - Support for PHP 5.x.
 - Obsolete dependencies, scripts and other info.
+- `AddCapableInterface`, `SetCapableInterface`,  and their descendants.
 
 ### Changed
 `MapFactoryInterface` now extends a new interface, leading to signature change.
@@ -18,6 +19,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - `HasCapableInteface` for ISP.
 - `ContainerCapableInterface` as a bridge between `HasCapableInterface`
 and PSR-11.
+- `WritableMapInterface` and `WritableSetInterface`.
 
 ## [0.2] - 2019-05-10
 Stable release.

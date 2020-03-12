@@ -2,18 +2,19 @@
 
 namespace Dhii\Collection\UnitTest;
 
-use Dhii\Collection\AddCapableInterface as TestSubject;
+use Dhii\Collection\SetInterface;
+use Dhii\Collection\WritableSetInterface as TestSubject;
 use PHPUnit\Framework\TestCase;
 use PHPUnit\Framework\MockObject\MockObject as MockObject;
+use Traversable;
 
 /**
  * Tests {@see TestSubject}.
  *
  * @since 0.2
  */
-class AddCapableInterfaceTest extends TestCase
+class WritableSetInterfaceTest extends TestCase
 {
-
     /**
      * Creates a new instance of the test subject.
      *
@@ -42,6 +43,11 @@ class AddCapableInterfaceTest extends TestCase
             TestSubject::class,
             $subject,
             'A valid instance of the test subject could not be created.'
+        );
+        $this->assertInstanceOf(
+            SetInterface::class,
+            $subject,
+            'Test subject does not implement required interface.'
         );
     }
 }

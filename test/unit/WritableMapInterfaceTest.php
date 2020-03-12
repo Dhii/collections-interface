@@ -2,21 +2,22 @@
 
 namespace Dhii\Collection\UnitTest;
 
-use Dhii\Collection\SetCapableInterface as TestSubject;
+use Dhii\Collection\MapInterface;
+use Dhii\Collection\WritableMapInterface as TestSubject;
 use PHPUnit\Framework\TestCase;
 use PHPUnit\Framework\MockObject\MockObject as MockObject;
 
 /**
  * Tests {@see TestSubject}.
  *
- * @since 0.2
+ * @since [*next-version*]
  */
-class SetCapableInterfaceTest extends TestCase
+class WritableMapInterfaceTest extends TestCase
 {
     /**
      * Creates a new instance of the test subject.
      *
-     * @since 0.2
+     * @since [*next-version*]
      *
      * @return TestSubject&MockObject The new instance.
      */
@@ -31,7 +32,7 @@ class SetCapableInterfaceTest extends TestCase
     /**
      * Tests whether a valid instance of the test subject can be created.
      *
-     * @since 0.2
+     * @since [*next-version*]
      */
     public function testCanBeCreated()
     {
@@ -41,6 +42,11 @@ class SetCapableInterfaceTest extends TestCase
             TestSubject::class,
             $subject,
             'A valid instance of the test subject could not be created.'
+        );
+        $this->assertInstanceOf(
+            MapInterface::class,
+            $subject,
+            'Test subject does not implement required interface.'
         );
     }
 }
