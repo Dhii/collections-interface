@@ -15,6 +15,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Added
 - Docker configuration.
 - `ContainerFactoryInterface`.
+- `HasCapableInteface` for ISP.
+- `ContainerCapableInterface` as a bridge between `HasCapableInterface`
+and PSR-11.
 
 ## [0.2] - 2019-05-10
 Stable release.

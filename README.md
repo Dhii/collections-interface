@@ -20,6 +20,8 @@ A highly [ISP][ISP]-compliant collection of interfaces that represent collection
 - [`SetCapableMapInterface`][SetCapableMapInterface]: A map that can have a value set for a key.
 - [`ContainerFactoryInterface`][]: A factory of `ContainerInterface` objects.
 - [`MapFactoryInterface`][]: A factory of `MapInterface` objects.
+- [`HasCapableInterface`][]: Something that can check for a given key.
+- [`ContainerInterface`][]: A container implementing `HasCapableInterface`.
 
 
 [Dhii]: https://github.com/Dhii/dhii
@@ -37,3 +39,5 @@ A highly [ISP][ISP]-compliant collection of interfaces that represent collection
 [SetCapableMapInterface]:                           src/SetCapableMapInterface.php
 [`MapFactoryInterface`]:                            src/MapFactoryInterface.php
 [`ContainerFactoryInterface`]:                      src/ContainerFactoryInterface.php
+[`HasCapableInterface`]:                            src/HasCapableInterface.php
+[`ContainerInterface`]:                             src/ContainerInterface.php
