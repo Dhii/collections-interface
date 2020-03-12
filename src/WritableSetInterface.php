@@ -13,31 +13,31 @@ interface WritableSetInterface extends SetInterface
     /**
      * Creates a new instance with the given items only.
      *
-     * @param iterable $items A list of items for the set.
+     * @param array $items A list of items for the set.
      *
      * @return static A new instance of this class with only the given items.
      *
      * @throws Exception If problem creating.
      */
-    public function withItems($items);
+    public function withItems(array $items);
 
     /**
      * Creates a new instance with the given items added to existing ones.
      *
-     * @param iterable $items A list of items to add.
+     * @param array $items A list of items to add.
      *
      * @return static A new instance of this class with the given items added to existing ones.
      *
      * @throws Exception If problem creating.
      */
-    public function withAddedItems($items);
+    public function withAddedItems(array $items);
 
     /**
      * Creates a new instance with the given items not present.
      *
-     * @param iterable $items A list of items to exclude.
+     * @param array $items A list of items to exclude.
      *
      * @return static An instance of this class without the given items.
      */
-    public function withoutItems($items);
+    public function withoutItems(array $items);
 }

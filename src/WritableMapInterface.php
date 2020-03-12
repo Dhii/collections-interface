@@ -17,37 +17,37 @@ interface WritableMapInterface extends MapInterface
      *
      * @since [*next-version*]
      *
-     * @param iterable $mappings A map of keys to values.
+     * @param array $mappings A map of keys to values.
      *
      * @return static A new instance of this class with only the specified key-value mappings.
      *
      * @throws Exception If problem creating.
      */
-    public function withMappings(iterable $mappings);
+    public function withMappings(array $mappings);
 
     /**
      * Creates a new instance with the specified mappings added to existing ones.
      *
      * @since [*next-version*]
      *
-     * @param iterable $mappings A map of keys to values.
+     * @param array $mappings A map of keys to values.
      *
      * @return static A new instance of this class with the specified key-value mappings added to existing ones.
      *
      * @throws Exception If problem creating.
      */
-    public function withAddedMappings(iterable $mappings);
+    public function withAddedMappings(array $mappings);
 
     /**
      * Creates a new instance with the specified keys not present.
      *
      * @since [*next-version*]
      *
-     * @param iterable $keys The keys to exclude.
+     * @param array $keys The keys to exclude.
      *
      * @return static A new instance of this class which does not contain the specified keys.
      *
      * @throws Exception If problem instantiating.
      */
-    public function withoutKeys(iterable $keys);
+    public function withoutKeys(array $keys);
 }
