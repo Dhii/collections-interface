@@ -19,7 +19,7 @@ A highly [ISP][ISP]-compliant collection of interfaces that represent collection
 - [`HasCapableInterface`][]: Something that can check for a given key.
 - [`ContainerInterface`][]: A container implementing `HasCapableInterface`.
 - [`WritableMapInterface`][]: A map that can have mappings added and removed.
-- [`WritableSetInterface`]]: A set that can have items added and removed.
+- [`WritableSetInterface`][]: A set that can have items added and removed.
 
 
 [Dhii]: https://github.com/Dhii/dhii
