@@ -3,7 +3,8 @@ declare(strict_types=1);
 
 namespace Dhii\Collection;
 
-use Psr\Container\ContainerInterface;
+use Exception;
+use Psr\Container\ContainerInterface as BaseContainerInterface;
 
 /**
  * A factory that can create maps.
@@ -18,6 +19,8 @@ interface MapFactoryInterface extends ContainerFactoryInterface
      * @param array $data The data to base the map on.
      *
      * @return MapInterface The new map.
+     *
+     * @throws Exception If problem creating.
      */
-    public function createFromArray(array $data): ContainerInterface;
+    public function createContainerFromArray(array $data): BaseContainerInterface;
 }
