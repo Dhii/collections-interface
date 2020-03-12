@@ -20,5 +20,5 @@ interface ContainerFactoryInterface
      *
      * @throws Exception If problem creating.
      */
-    public function createFromArray(array $data): ContainerInterface;
+    public function createContainerFromArray(array $data): ContainerInterface;
 }
