@@ -18,6 +18,7 @@ A highly [ISP][ISP]-compliant collection of interfaces that represent collection
 - [`MapFactoryInterface`][]: A factory of `MapInterface` objects.
 - [`HasCapableInterface`][]: Something that can check for a given key.
 - [`ContainerInterface`][]: A container implementing `HasCapableInterface`.
+- [`WritableContainerInterface`][]: A container that can have mappings added and removed.
 - [`WritableMapInterface`][]: A map that can have mappings added and removed.
 - [`WritableSetInterface`][]: A set that can have items added and removed.
 
@@ -35,5 +36,6 @@ A highly [ISP][ISP]-compliant collection of interfaces that represent collection
 [`ContainerFactoryInterface`]:                      src/ContainerFactoryInterface.php
 [`HasCapableInterface`]:                            src/HasCapableInterface.php
 [`ContainerInterface`]:                             src/ContainerInterface.php
+[`WritableContainerInterface`]:                     src/WritableContainerInterface.php
 [`WritableMapInterface`]:                           src/WritableMapInterface.php
 [`WritableSetInterface`]:                           src/WritableSetInterface.php
