@@ -3,6 +3,7 @@
 namespace Dhii\Collection\UnitTest;
 
 use Dhii\Collection\MapInterface;
+use Dhii\Collection\WritableContainerInterface;
 use Dhii\Collection\WritableMapInterface as TestSubject;
 use PHPUnit\Framework\TestCase;
 use PHPUnit\Framework\MockObject\MockObject as MockObject;
@@ -45,6 +46,11 @@ class WritableMapInterfaceTest extends TestCase
         );
         $this->assertInstanceOf(
             MapInterface::class,
+            $subject,
+            'Test subject does not implement required interface.'
+        );
+        $this->assertInstanceOf(
+            WritableContainerInterface::class,
             $subject,
             'Test subject does not implement required interface.'
         );
