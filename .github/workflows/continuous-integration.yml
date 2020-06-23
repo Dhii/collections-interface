@@ -21,6 +21,6 @@ jobs:
     - name: PhpUnit
       run: ./vendor/bin/phpunit
     - name: PhpCS
-      run: ./vendor/bin/phpcs -s --runtime-set ignore_warnings_on_exit 1
+      run: ./vendor/bin/phpcs -s --report-source --runtime-set ignore_warnings_on_exit 1
     - name: Psalm
       run: ./vendor/bin/psalm --show-info=true
