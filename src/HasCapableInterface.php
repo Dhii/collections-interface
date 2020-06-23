@@ -23,5 +23,5 @@ interface HasCapableInterface
      * @psalm-suppress PossiblyUnusedMethod
      * @psalm-suppress InvalidThrow
      */
-    public function has(string $key): bool;
+    public function has($key);
 }
