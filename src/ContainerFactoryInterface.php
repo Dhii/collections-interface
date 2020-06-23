@@ -19,6 +19,8 @@ interface ContainerFactoryInterface
      * @return ContainerInterface The new container.
      *
      * @throws Exception If problem creating.
+     *
+     * @psalm-suppress PossiblyUnusedMethod
      */
     public function createContainerFromArray(array $data): ContainerInterface;
 }

@@ -18,6 +18,8 @@ interface WritableSetInterface extends SetInterface
      * @return static A new instance of this class with only the given items.
      *
      * @throws Exception If problem creating.
+     *
+     * @psalm-suppress PossiblyUnusedMethod
      */
     public function withItems(array $items);
 
@@ -29,6 +31,8 @@ interface WritableSetInterface extends SetInterface
      * @return static A new instance of this class with the given items added to existing ones.
      *
      * @throws Exception If problem creating.
+     *
+     * @psalm-suppress PossiblyUnusedMethod
      */
     public function withAddedItems(array $items);
 
@@ -38,6 +42,10 @@ interface WritableSetInterface extends SetInterface
      * @param array|mixed[] $items A list of items to exclude.
      *
      * @return static An instance of this class without the given items.
+     *
+     * @throws Exception If problem creating.
+     *
+     * @psalm-suppress PossiblyUnusedMethod
      */
     public function withoutItems(array $items);
 }

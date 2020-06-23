@@ -20,6 +20,8 @@ interface WritableContainerInterface extends ContainerInterface
      * @return static A new instance of this class with only the specified key-value mappings.
      *
      * @throws Exception If problem creating.
+     *
+     * @psalm-suppress PossiblyUnusedMethod
      */
     public function withMappings(array $mappings);
 
@@ -33,6 +35,8 @@ interface WritableContainerInterface extends ContainerInterface
      * @return static A new instance of this class with the specified key-value mappings added to existing ones.
      *
      * @throws Exception If problem creating.
+     *
+     * @psalm-suppress PossiblyUnusedMethod
      */
     public function withAddedMappings(array $mappings);
 
@@ -46,6 +50,8 @@ interface WritableContainerInterface extends ContainerInterface
      * @return static A new instance of this class which does not contain the specified keys.
      *
      * @throws Exception If problem instantiating.
+     *
+     * @psalm-suppress PossiblyUnusedMethod
      */
     public function withoutKeys(array $keys);
 }

@@ -3,6 +3,8 @@ declare(strict_types=1);
 
 namespace Dhii\Collection;
 
+use Exception;
+
 /**
  * A factory that can create sets.
  *
@@ -18,6 +20,10 @@ interface SetFactoryInterface
      * @param array<mixed> $list The list to base the set on.
      *
      * @return SetInterface The new set.
+     *
+     * @throws Exception If problem creating.
+     *
+     * @psalm-suppress PossiblyUnusedMethod
      */
     public function createSetFromList(array $list): SetInterface;
 }
