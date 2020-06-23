@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 namespace Dhii\Collection;
@@ -10,4 +11,5 @@ namespace Dhii\Collection;
  */
 interface WritableMapInterface extends MapInterface, WritableContainerInterface
 {
+
 }

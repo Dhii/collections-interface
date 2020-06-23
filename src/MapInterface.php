@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 namespace Dhii\Collection;
@@ -16,4 +17,5 @@ interface MapInterface extends
     /* @since 0.2 */
     ContainerInterface
 {
+
 }

@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 namespace Dhii\Collection;
@@ -23,7 +24,7 @@ interface WritableContainerInterface extends ContainerInterface
      *
      * @psalm-suppress PossiblyUnusedMethod
      */
-    public function withMappings(array $mappings);
+    public function withMappings(array $mappings): WritableContainerInterface;
 
     /**
      * Creates a new instance with the specified mappings added to existing ones.
@@ -38,7 +39,7 @@ interface WritableContainerInterface extends ContainerInterface
      *
      * @psalm-suppress PossiblyUnusedMethod
      */
-    public function withAddedMappings(array $mappings);
+    public function withAddedMappings(array $mappings): WritableContainerInterface;
 
     /**
      * Creates a new instance with the specified keys not present.
@@ -53,5 +54,5 @@ interface WritableContainerInterface extends ContainerInterface
      *
      * @psalm-suppress PossiblyUnusedMethod
      */
-    public function withoutKeys(array $keys);
+    public function withoutKeys(array $keys): WritableContainerInterface;
 }

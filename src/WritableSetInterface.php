@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 namespace Dhii\Collection;
@@ -36,7 +37,7 @@ interface WritableSetInterface extends SetInterface
      *
      * @psalm-suppress PossiblyUnusedMethod
      */
-    public function withAddedItems(array $items);
+    public function withAddedItems(array $items): WritableSetInterface;
 
     /**
      * Creates a new instance with the given items not present.
@@ -49,5 +50,5 @@ interface WritableSetInterface extends SetInterface
      *
      * @psalm-suppress PossiblyUnusedMethod
      */
-    public function withoutItems(array $items);
+    public function withoutItems(array $items): WritableSetInterface;
 }
