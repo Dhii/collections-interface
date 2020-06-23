@@ -14,7 +14,7 @@ interface ContainerFactoryInterface
     /**
      * Creates a container based on data.
      *
-     * @param array $data The data for the container.
+     * @param array<string, mixed> $data The data for the container.
      *
      * @return ContainerInterface The new container.
      *

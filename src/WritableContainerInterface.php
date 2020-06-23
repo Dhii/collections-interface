@@ -15,7 +15,7 @@ interface WritableContainerInterface extends ContainerInterface
      *
      * @since [*next-version*]
      *
-     * @param array $mappings A map of keys to values.
+     * @param array<string, mixed> $mappings A map of keys to values.
      *
      * @return static A new instance of this class with only the specified key-value mappings.
      *
@@ -28,7 +28,7 @@ interface WritableContainerInterface extends ContainerInterface
      *
      * @since [*next-version*]
      *
-     * @param array $mappings A map of keys to values.
+     * @param array<string, mixed> $mappings A map of keys to values.
      *
      * @return static A new instance of this class with the specified key-value mappings added to existing ones.
      *
@@ -41,7 +41,7 @@ interface WritableContainerInterface extends ContainerInterface
      *
      * @since [*next-version*]
      *
-     * @param array $keys The keys to exclude.
+     * @param array<string> $keys The keys to exclude.
      *
      * @return static A new instance of this class which does not contain the specified keys.
      *

@@ -15,7 +15,7 @@ interface SetFactoryInterface
      *
      * @since [*next-version*]
      *
-     * @param array $list The list to base the set on.
+     * @param array<mixed> $list The list to base the set on.
      *
      * @return SetInterface The new set.
      */

@@ -15,5 +15,5 @@ interface HasCapableInterface
      *
      * @return bool True if the key exists; false otherwise.
      */
-    public function has($key);
+    public function has(string $key): bool;
 }

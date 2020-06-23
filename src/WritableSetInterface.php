@@ -13,7 +13,7 @@ interface WritableSetInterface extends SetInterface
     /**
      * Creates a new instance with the given items only.
      *
-     * @param array $items A list of items for the set.
+     * @param array|mixed[] $items A list of items for the set.
      *
      * @return static A new instance of this class with only the given items.
      *
@@ -24,7 +24,7 @@ interface WritableSetInterface extends SetInterface
     /**
      * Creates a new instance with the given items added to existing ones.
      *
-     * @param array $items A list of items to add.
+     * @param array|mixed[] $items A list of items to add.
      *
      * @return static A new instance of this class with the given items added to existing ones.
      *
@@ -35,7 +35,7 @@ interface WritableSetInterface extends SetInterface
     /**
      * Creates a new instance with the given items not present.
      *
-     * @param array $items A list of items to exclude.
+     * @param array|mixed[] $items A list of items to exclude.
      *
      * @return static An instance of this class without the given items.
      */
