@@ -15,7 +15,7 @@
     <rule ref="SlevomatCodingStandard.TypeHints.UselessConstantTypeHint"/>
     <rule ref="SlevomatCodingStandard.TypeHints.DeclareStrictTypes">
         <properties>
-            <property name="newlinesCountBetweenOpenTagAndDeclare" value="1"/>
+            <property name="newlinesCountBetweenOpenTagAndDeclare" value="2"/>
             <property name="newlinesCountAfterDeclare" value="2"/>
             <property name="spacesCountAroundEqualsSign" value="0"/>
         </properties>
@@ -30,7 +30,7 @@
                 <element value="constants"/>
 
                 <!-- You don't care about the order among the properties. The same can be done with "properties" shortcut -->
-                <element value="public properties, protected properties, private properties"/>
+                <element value="public properties, protected properties, private properties, properties"/>
 
                 <!-- Constructor is first, then all public methods, then protected/private methods and magic methods are last -->
                 <element value="constructor"/>
