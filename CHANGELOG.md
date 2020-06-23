@@ -21,6 +21,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - `ContainerCapableInterface` as a bridge between `HasCapableInterface`
 and PSR-11.
 - `WritableMapInterface` and `WritableSetInterface`.
+- `MutableContainerInterface`.
 
 ## [0.2] - 2019-05-10
 Stable release.
