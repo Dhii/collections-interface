@@ -18,9 +18,9 @@ jobs:
       uses: shivammathur/setup-php@v2
       with:
         php-version: ${{ matrix.php-versions }}
+    - name: PhpUnit
+      run: ./vendor/bin/phpunit
     - name: PhpCS
       run: ./vendor/bin/phpcs --runtime-set ignore_warnings_on_exit 1
     - name: Psalm
       run: ./vendor/bin/psalm --show-info=true
-    - name: PhpUnit
-      run: ./vendor/bin/phpunit
