@@ -5,6 +5,8 @@ namespace Dhii\Collection;
 
 /**
  * Creates writable sets.
+ *
+ * @psalm-suppress UnusedClass
  */
 interface WritableSetFactoryInterface extends SetFactoryInterface
 {

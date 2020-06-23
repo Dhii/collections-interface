@@ -20,6 +20,7 @@ interface HasCapableInterface
      * @throws ContainerExceptionInterface If problem determining.
      *
      * @psalm-suppress PossiblyUnusedMethod
+     * @psalm-suppress InvalidThrow
      */
     public function has(string $key): bool;
 }

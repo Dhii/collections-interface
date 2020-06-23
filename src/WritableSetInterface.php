@@ -7,6 +7,8 @@ use Exception;
 
 /**
  * A set that can have items added.
+ *
+ * @psalm-suppress UnusedClass
  */
 interface WritableSetInterface extends SetInterface
 {

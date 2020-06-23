@@ -7,6 +7,8 @@ use Psr\Container\ContainerInterface as BaseContainerInterface;
 
 /**
  * Creates writable maps.
+ *
+ * @psalm-suppress UnusedClass
  */
 interface WritableMapFactoryInterface extends WritableContainerFactoryInterface, MapFactoryInterface
 {

@@ -7,6 +7,8 @@ use Psr\Container\ContainerExceptionInterface;
 
 /**
  * A container that can have mappings added and removed.
+ *
+ * @psalm-suppress UnusedClass
  */
 interface MutableContainerInterface extends ContainerInterface
 {
@@ -19,6 +21,7 @@ interface MutableContainerInterface extends ContainerInterface
      * @param mixed  $value The value to map to the key.
      *
      * @throws ContainerExceptionInterface If problem mapping.
+     * @psalm-suppress InvalidThrow
      */
     public function set(string $key, $value): void;
 
@@ -30,6 +33,7 @@ interface MutableContainerInterface extends ContainerInterface
      * @param string $key The key to unmap the value from.
      *
      * @throws ContainerExceptionInterface If problem unmapping.
+     * @psalm-suppress InvalidThrow
      */
     public function unset(string $key): void;
 }
