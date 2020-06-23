@@ -177,8 +177,7 @@
   <component name="PhpProjectSharedConfiguration" php_language_level="7.1" />
   <component name="PhpUnit">
     <phpunit_settings>
-      <phpunit_by_interpreter interpreter_id="2fae000c-1852-465c-84ba-12779244a4ce" configuration_file_path="/srv/phpunit.xml" custom_loader_path="/srv/vendor/autoload.php" phpunit_phar_path="" use_configuration_file="true" />
-      <PhpUnitSettings configuration_file_path="$PROJECT_DIR$/phpunit.xml" custom_loader_path="$PROJECT_DIR$/vendor/autoload.php" use_configuration_file="true" />
+      <phpunit_by_interpreter interpreter_id="2fae000c-1852-465c-84ba-12779244a4ce" configuration_file_path="/srv/phpunit.xml.dist" custom_loader_path="/srv/vendor/autoload.php" phpunit_phar_path="" use_configuration_file="true" />
     </phpunit_settings>
   </component>
 </project>
