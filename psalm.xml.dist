@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<psalm
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="https://getpsalm.org/schema/config"
+        useDocblockTypes="true"
+        errorLevel="1"
+        strictBinaryOperands="false"
+        rememberPropertyAssignmentsAfterCall="true"
+        checkForThrowsDocblock="false"
+        throwExceptionOnError="0"
+        findUnusedCode="true"
+        ensureArrayStringOffsetsExist="true"
+        ensureArrayIntOffsetsExist="false"
+        xsi:noNamespaceSchemaLocation="https://getpsalm.org/schema/config"
+>
+    <projectFiles>
+        <directory name="src"/>
+        <ignoreFiles>
+            <directory name="vendor"/>
+        </ignoreFiles>
+    </projectFiles>
+    <extraFiles>
+        <directory name="vendor" />
+        <ignoreFiles>
+            <file name="vendor/phpunit/php-code-coverage/tests/_files/Crash.php" />
+        </ignoreFiles>
+    </extraFiles>
+</psalm>

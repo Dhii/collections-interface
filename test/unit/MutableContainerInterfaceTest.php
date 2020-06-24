@@ -2,29 +2,30 @@
 
 namespace Dhii\Collection\UnitTest;
 
-use Dhii\Collection\HasItemCapableInterface;
-use Dhii\Collection\SetInterface as TestSubject;
+use Dhii\Collection\ContainerInterface as Subject;
+use Dhii\Collection\HasCapableInterface;
 use PHPUnit\Framework\TestCase;
 use PHPUnit\Framework\MockObject\MockObject as MockObject;
-use Traversable;
+use Psr\Container\ContainerInterface;
 
 /**
- * Tests {@see TestSubject}.
+ * Tests {@see Subject}.
  *
- * @since 0.2
+ * @since [*next-version*]
  */
-class SetInterfaceTest extends TestCase
+class MutableContainerInterfaceTest extends TestCase
 {
+
     /**
      * Creates a new instance of the test subject.
      *
-     * @since 0.2
+     * @since [*next-version*]
      *
-     * @return TestSubject&MockObject The new instance.
+     * @return Subject&MockObject The new instance.
      */
     public function createInstance()
     {
-        $mock = $this->getMockBuilder(TestSubject::class)
+        $mock = $this->getMockBuilder(Subject::class)
             ->getMock();
 
         return $mock;
@@ -33,26 +34,21 @@ class SetInterfaceTest extends TestCase
     /**
      * Tests whether a valid instance of the test subject can be created.
      *
-     * @since 0.2
+     * @since [*next-version*]
      */
     public function testCanBeCreated()
     {
         $subject = $this->createInstance();
 
         $this->assertInstanceOf(
-            TestSubject::class,
+            Subject::class,
             $subject,
             'A valid instance of the test subject could not be created.'
         );
         $this->assertInstanceOf(
-            Traversable::class,
+            ContainerInterface::class,
             $subject,
-            'Test subject does not implement required interface.'
-        );
-        $this->assertInstanceOf(
-            HasItemCapableInterface::class,
-            $subject,
-            'Test subject does not implement required interface.'
+            'Subject does not implement a required interface.'
         );
     }
 }

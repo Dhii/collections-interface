@@ -2,23 +2,24 @@
 
 namespace Dhii\Collection\UnitTest;
 
-use Dhii\Collection\HasItemCapableInterface;
-use Dhii\Collection\SetInterface as TestSubject;
+use Dhii\Collection\ContainerInterface as TestSubject;
+use Dhii\Collection\HasCapableInterface;
 use PHPUnit\Framework\TestCase;
 use PHPUnit\Framework\MockObject\MockObject as MockObject;
-use Traversable;
+use Psr\Container\ContainerInterface;
 
 /**
  * Tests {@see TestSubject}.
  *
- * @since 0.2
+ * @since [*next-version*]
  */
-class SetInterfaceTest extends TestCase
+class ContainerInterfaceTest extends TestCase
 {
+
     /**
      * Creates a new instance of the test subject.
      *
-     * @since 0.2
+     * @since [*next-version*]
      *
      * @return TestSubject&MockObject The new instance.
      */
@@ -33,7 +34,7 @@ class SetInterfaceTest extends TestCase
     /**
      * Tests whether a valid instance of the test subject can be created.
      *
-     * @since 0.2
+     * @since [*next-version*]
      */
     public function testCanBeCreated()
     {
@@ -45,14 +46,14 @@ class SetInterfaceTest extends TestCase
             'A valid instance of the test subject could not be created.'
         );
         $this->assertInstanceOf(
-            Traversable::class,
+            HasCapableInterface::class,
             $subject,
-            'Test subject does not implement required interface.'
+            'Subject does not implement a required interface.'
         );
         $this->assertInstanceOf(
-            HasItemCapableInterface::class,
+            ContainerInterface::class,
             $subject,
-            'Test subject does not implement required interface.'
+            'Subject does not implement a required interface.'
         );
     }
 }

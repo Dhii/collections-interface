@@ -2,22 +2,23 @@
 
 namespace Dhii\Collection\UnitTest;
 
-use Dhii\Collection\ContainerFactoryInterface;
-use Dhii\Collection\MapFactoryInterface as TestSubject;
+use Dhii\Collection\MapFactoryInterface;
+use Dhii\Collection\WritableContainerFactoryInterface;
+use Dhii\Collection\WritableMapFactoryInterface as TestSubject;
 use PHPUnit\Framework\TestCase;
 use PHPUnit\Framework\MockObject\MockObject as MockObject;
 
 /**
  * Tests {@see TestSubject}.
  *
- * @since 0.2
+ * @since [*next-version*]
  */
-class MapFactoryInterfaceTest extends TestCase
+class WritableMapFactoryInterfaceTest extends TestCase
 {
     /**
      * Creates a new instance of the test subject.
      *
-     * @since 0.2
+     * @since [*next-version*]
      *
      * @return TestSubject&MockObject The new instance.
      */
@@ -32,13 +33,14 @@ class MapFactoryInterfaceTest extends TestCase
     /**
      * Tests whether a valid instance of the test subject can be created.
      *
-     * @since 0.2
+     * @since [*next-version*]
      */
     public function testCanBeCreated()
     {
         $subject = $this->createInstance();
 
         $this->assertInstanceOf(TestSubject::class, $subject, 'A valid instance of the test subject could not be created.');
-        $this->assertInstanceOf(ContainerFactoryInterface::class, $subject, 'Test subject does not implement required interface.');
+        $this->assertInstanceOf(MapFactoryInterface::class, $subject, 'Test subject does not implement required interface.');
+        $this->assertInstanceOf(WritableContainerFactoryInterface::class, $subject, 'Test subject does not implement required interface.');
     }
 }
