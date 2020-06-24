@@ -21,5 +21,8 @@
     </projectFiles>
     <extraFiles>
         <directory name="vendor" />
+        <ignoreFiles>
+            <file name="vendor/phpunit/php-code-coverage/tests/_files/Crash.php" />
+        </ignoreFiles>
     </extraFiles>
 </psalm>
