@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Dhii\Collection;
 
 use Psr\Container\ContainerExceptionInterface;
+use Psr\Container\NotFoundExceptionInterface;
 
 /**
  * A container that can have mappings added and removed.
@@ -33,6 +34,7 @@ interface MutableContainerInterface extends ContainerInterface
      *
      * @param string $key The key to unmap the value from.
      *
+     * @throws NotFoundExceptionInterface  If key not found.
      * @throws ContainerExceptionInterface If problem unmapping.
      * @psalm-suppress InvalidThrow
      */

@@ -22,6 +22,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 and PSR-11.
 - `WritableMapInterface` and `WritableSetInterface`.
 - `MutableContainerInterface`.
+- `MutableContainerInterface#unset()` can now throw `NotFoundExceptionInterface`
+when unsetting non-existing key.
 
 ## [0.2] - 2019-05-10
 Stable release.
