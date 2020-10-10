@@ -12,17 +12,14 @@
         ensureArrayStringOffsetsExist="true"
         ensureArrayIntOffsetsExist="false"
         xsi:noNamespaceSchemaLocation="https://getpsalm.org/schema/config"
+        cacheDirectory="/var/tmp/psalm"
 >
     <projectFiles>
         <directory name="src"/>
-        <ignoreFiles>
-            <directory name="vendor"/>
-        </ignoreFiles>
     </projectFiles>
-    <extraFiles>
-        <directory name="vendor" />
-        <ignoreFiles>
-            <file name="vendor/phpunit/php-code-coverage/tests/_files/Crash.php" />
-        </ignoreFiles>
-    </extraFiles>
+
+    <issueHandlers>
+        <InvalidThrow errorLevel="suppress"></InvalidThrow>
+        <UnusedClass errorLevel="suppress"></UnusedClass>
+    </issueHandlers>
 </psalm>

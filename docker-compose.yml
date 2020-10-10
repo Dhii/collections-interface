@@ -7,3 +7,7 @@ services:
       dockerfile: Dockerfile_php
     volumes:
       - ${BASE_PATH}:/srv/
+      - psalm_cache:/var/tmp/psalm
+
+volumes:
+  psalm_cache:
