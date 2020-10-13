@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Dhii\Collection;
 
 use Psr\Container\ContainerExceptionInterface;
-use Psr\Container\ContainerInterfac as PsrContainerInterface;
+use Psr\Container\ContainerInterface as PsrContainerInterface;
 
 interface ClearableContainerInterface extends PsrContainerInterface
 {
