@@ -5,8 +5,9 @@ declare(strict_types=1);
 namespace Dhii\Collection;
 
 use Psr\Container\ContainerExceptionInterface;
+use Psr\Container\ContainerInterfac as PsrContainerInterface;
 
-interface ClearableContainerInterface extends \Psr\Container\ContainerInterface
+interface ClearableContainerInterface extends PsrContainerInterface
 {
     /**
      * Removes all members from this container.
