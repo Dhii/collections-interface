@@ -9,6 +9,8 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/amphp/amp" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/amphp/byte-stream" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/composer" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/dealerdirect/phpcodesniffer-composer-installer" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/dnoegel/php-xdg-base-dir" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/doctrine/instantiator" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/felixfbecker/advanced-json-rpc" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/felixfbecker/language-server-protocol" />

@@ -21,6 +21,7 @@ A highly [ISP][ISP]-compliant collection of interfaces that represent collection
 - [`WritableContainerInterface`][]: A container that can have mappings added and removed.
 - [`WritableMapInterface`][]: A map that can have mappings added and removed.
 - [`WritableSetInterface`][]: A set that can have items added and removed.
+- [`ClearableContainerInterface`][]: A container that can have its members cleared.
 
 
 [Dhii]: https://github.com/Dhii/dhii
@@ -39,3 +40,4 @@ A highly [ISP][ISP]-compliant collection of interfaces that represent collection
 [`WritableContainerInterface`]:                     src/WritableContainerInterface.php
 [`WritableMapInterface`]:                           src/WritableMapInterface.php
 [`WritableSetInterface`]:                           src/WritableSetInterface.php
+[`ClearableContainerInterface`]:                    src/ClearableContainerInterface.php

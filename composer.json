@@ -7,6 +7,10 @@
         {
             "name": "Dhii Team",
             "email": "development@dhii.co"
+        },
+        {
+            "name": "Anton Ukhanev",
+            "email": "xedin.unknown@gmail.com"
         }
     ],
     "minimum-stability": "dev",
