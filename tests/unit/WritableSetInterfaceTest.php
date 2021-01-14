@@ -6,7 +6,6 @@ use Dhii\Collection\SetInterface;
 use Dhii\Collection\WritableSetInterface as TestSubject;
 use PHPUnit\Framework\TestCase;
 use PHPUnit\Framework\MockObject\MockObject as MockObject;
-use Traversable;
 
 /**
  * Tests {@see TestSubject}.
