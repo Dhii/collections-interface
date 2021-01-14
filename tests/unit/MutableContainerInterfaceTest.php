@@ -3,7 +3,6 @@
 namespace Dhii\Collection\UnitTest;
 
 use Dhii\Collection\ContainerInterface as Subject;
-use Dhii\Collection\HasCapableInterface;
 use PHPUnit\Framework\TestCase;
 use PHPUnit\Framework\MockObject\MockObject as MockObject;
 use Psr\Container\ContainerInterface;

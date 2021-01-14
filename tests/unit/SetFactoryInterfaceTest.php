@@ -2,7 +2,6 @@
 
 namespace Dhii\Collection\UnitTest;
 
-use Dhii\Collection\ContainerFactoryInterface;
 use Dhii\Collection\SetFactoryInterface as TestSubject;
 use PHPUnit\Framework\TestCase;
 use PHPUnit\Framework\MockObject\MockObject as MockObject;
