@@ -5,9 +5,11 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [[*next-version*]] - YYYY-MM-DD
+
+## [0.3.0-alpha4] - 2021-03-09
 ### Fixed
 - Order of `extends` use to cause problems with newer versions
-of `psr/container` (#28). See [comments][1].
+of `psr/container` (#28).
 
 ### Changed
 - QoL improvements (#28).
@@ -73,6 +75,3 @@ Stable release.
 
 ## [0.2-alpha1] - 2018-04-06
 Initial version.
-
-
-[1]: https://github.com/php-fig/container/commit/6c2bc7fc1619d0f3f3442be69f177e6103d27dc7#commitcomment-47930697
