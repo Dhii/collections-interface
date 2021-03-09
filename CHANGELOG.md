@@ -7,10 +7,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ## [[*next-version*]] - YYYY-MM-DD
 ### Fixed
 - Order of `extends` use to cause problems with newer versions
-of `psr/container`. See [comments][1].
+of `psr/container` (#28). See [comments][1].
 
 ### Changed
-- QoL improvements.
+- QoL improvements (#28).
 
 ## [0.3.0-alpha3] - 2021-01-14
 ### Changed
