@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Dhii\Collection;
 
 use RuntimeException;
@@ -18,9 +20,11 @@ interface HasItemCapableInterface
      *
      * @param mixed $item The item to check for.
      *
+     * @return bool True if the item exists; false otherwise.
+     *
      * @throws RuntimeException If the existence of the item could not be verified.
      *
-     * @return bool True if the item exists; false otherwise.
+     * @psalm-suppress PossiblyUnusedMethod
      */
-    public function hasItem($item);
+    public function hasItem($item): bool;
 }
