@@ -7,6 +7,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ## [[*next-version*]] - YYYY-MM-DD
 ### Added
 - Automation improvements (#31).
+- Official support up to PHP 8.3 (#31).
 
 ## [0.3.0] - 2021-10-06
 Stable release.
