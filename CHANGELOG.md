@@ -8,7 +8,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Added
 - Automation improvements (#31).
 - Official support up to PHP 8.3 (#31).
-- Add support for `php-fig/container` 2.0+ (#31).
+- Support for `php-fig/container` 2.0+ (#31).
 
 ## [0.3.0] - 2021-10-06
 Stable release.
