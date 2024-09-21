@@ -22,7 +22,6 @@ interface HasCapableInterface
      *
      * @psalm-suppress PossiblyUnusedMethod
      * @psalm-suppress InvalidThrow
-     * @phpcsSuppress SlevomatCodingStandard.TypeHints.ReturnTypeHint.MissingNativeTypeHint
      */
-    public function has(string $key);
+    public function has(string $key): bool;
 }
