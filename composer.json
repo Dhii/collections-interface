@@ -34,11 +34,6 @@
             "Dhii\\Collection\\UnitTest\\": "tests/unit"
         }
     },
-    "extra": {
-        "branch-alias": {
-            "dev-develop": "0.3.x-dev"
-        }
-    },
     "config": {
         "allow-plugins": {
             "dealerdirect/phpcodesniffer-composer-installer": true
