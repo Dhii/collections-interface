@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace Dhii\Collection;
 
 use Exception;
-use Psr\Container\ContainerInterface as BaseContainerInterface;
 
 /**
  * A factory that can create maps.
