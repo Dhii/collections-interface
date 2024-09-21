@@ -56,8 +56,8 @@
   </component>
   <component name="PhpInterpreters">
     <interpreters>
-      <interpreter id="4491634a-1916-4564-83ed-baa89584d509" name="Build" home="docker-compose://DATA" debugger_id="php.debugger.XDebug">
-        <remote_data INTERPRETER_PATH="php" HELPERS_PATH="/opt/.phpstorm_helpers" INITIALIZED="false" VALID="true" RUN_AS_ROOT_VIA_SUDO="false" DOCKER_ACCOUNT_NAME="Docker" DOCKER_COMPOSE_SERVICE_NAME="build" DOCKER_REMOTE_PROJECT_PATH="/opt/project">
+      <interpreter id="4491634a-1916-4564-83ed-baa89584d509" name="Build" home="docker-compose://DATA" auto="false" debugger_id="php.debugger.XDebug">
+        <remote_data INTERPRETER_PATH="php" HELPERS_PATH="/opt/.phpstorm_helpers" VALID="true" RUN_AS_ROOT_VIA_SUDO="false" DOCKER_ACCOUNT_NAME="Docker" DOCKER_COMPOSE_SERVICE_NAME="build" DOCKER_REMOTE_PROJECT_PATH="/opt/project">
           <type_data command="RUN" />
           <dockerComposeConfigurationPaths>
             <item value="$PROJECT_DIR$/docker-compose.yml" />
@@ -65,11 +65,11 @@
           <envs />
         </remote_data>
       </interpreter>
-      <interpreter id="8398a35f-5dc1-4180-b3c0-cb873f4058b8" name="Test" home="docker-compose://DATA" debugger_id="php.debugger.XDebug" debugger_extension="/usr/local/lib/php/extensions/no-debug-non-zts-20190902/xdebug.so">
+      <interpreter id="8398a35f-5dc1-4180-b3c0-cb873f4058b8" name="Test" home="docker-compose://DATA" auto="false" debugger_id="php.debugger.XDebug" debugger_extension="/usr/local/lib/php/extensions/no-debug-non-zts-20190902/xdebug.so">
         <configuration_options>
           <configuration_option name="xdebug.remote_host" value="host.docker.internal" />
         </configuration_options>
-        <remote_data INTERPRETER_PATH="php" HELPERS_PATH="/opt/.phpstorm_helpers" INITIALIZED="false" VALID="true" RUN_AS_ROOT_VIA_SUDO="false" DOCKER_ACCOUNT_NAME="Docker" DOCKER_COMPOSE_SERVICE_NAME="test" DOCKER_REMOTE_PROJECT_PATH="/opt/project">
+        <remote_data INTERPRETER_PATH="php" HELPERS_PATH="/opt/.phpstorm_helpers" VALID="true" RUN_AS_ROOT_VIA_SUDO="false" DOCKER_ACCOUNT_NAME="Docker" DOCKER_COMPOSE_SERVICE_NAME="test" DOCKER_REMOTE_PROJECT_PATH="/opt/project">
           <type_data command="RUN" />
           <dockerComposeConfigurationPaths>
             <item value="$PROJECT_DIR$/docker-compose.yml" />
