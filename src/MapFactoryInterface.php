@@ -23,5 +23,5 @@ interface MapFactoryInterface extends ContainerFactoryInterface
      *
      * @throws Exception If problem creating.
      */
-    public function createContainerFromArray(array $data): BaseContainerInterface;
+    public function createContainerFromArray(array $data): MapInterface;
 }
