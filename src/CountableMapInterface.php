@@ -17,5 +17,4 @@ interface CountableMapInterface extends
     /* @since 0.2 */
     MapInterface
 {
-
 }

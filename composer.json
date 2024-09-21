@@ -16,13 +16,13 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
-        "php": "^7.1 | ^8.0",
-        "psr/container": "^1.0"
+        "php": "^7.4 | ^8.0",
+        "psr/container": "^1.0 | ^2.0"
     },
     "require-dev": {
-        "phpunit/phpunit": "^7.0 | ^8.0 | ^9.0",
+        "phpunit/phpunit": "^9.0",
         "slevomat/coding-standard": "^6.0",
-        "vimeo/psalm": "^4.0"
+        "vimeo/psalm": "^4.6.2 | ^5.0"
     },
     "autoload": {
         "psr-4": {
@@ -37,6 +37,11 @@
     "extra": {
         "branch-alias": {
             "dev-develop": "0.3.x-dev"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
         }
     }
 }

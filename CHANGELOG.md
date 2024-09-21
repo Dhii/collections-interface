@@ -5,6 +5,15 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [[*next-version*]] - YYYY-MM-DD
+### Added
+- Automation improvements (#31).
+- Official support up to PHP 8.3 (#31).
+- Support for `php-fig/container` 2.0+ (#31).
+
+### Removed
+- Support for `php-fig/container` v1 (#31).
+- Support for PHP < 7.4 (#31): signatures for new and old `php-fig/container`
+  are fundamentally incompatible.
 
 ## [0.3.0] - 2021-10-06
 Stable release.
@@ -12,7 +21,7 @@ Stable release.
 ## [0.3.0-alpha4] - 2021-03-09
 ### Fixed
 - Order of `extends` use to cause problems with newer versions
-of `psr/container` (#28).
+of `php-fig/container` (#28).
 
 ### Changed
 - QoL improvements (#28).
