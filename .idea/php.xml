@@ -185,4 +185,8 @@
       <PhpUnitSettings configuration_file_path="$PROJECT_DIR$/phpunit.xml.dist" custom_loader_path="$PROJECT_DIR$/vendor/autoload.php" use_configuration_file="true" />
     </phpunit_settings>
   </component>
+  <component name="PsalmOptionsConfiguration">
+    <option name="config" value="\\wsl.localhost\Ubuntu\home\xedin\projects\dhii\collections-interface\psalm.xml.dist" />
+    <option name="transferred" value="true" />
+  </component>
 </project>
