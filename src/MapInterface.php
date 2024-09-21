@@ -17,5 +17,4 @@ interface MapInterface extends
     /* @since 0.2 */
     ContainerInterface
 {
-
 }

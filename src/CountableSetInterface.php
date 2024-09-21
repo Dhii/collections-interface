@@ -17,5 +17,4 @@ interface CountableSetInterface extends
     /* @since 0.2 */
     SetInterface
 {
-
 }

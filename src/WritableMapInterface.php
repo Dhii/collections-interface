@@ -11,5 +11,4 @@ namespace Dhii\Collection;
  */
 interface WritableMapInterface extends MapInterface, WritableContainerInterface
 {
-
 }
