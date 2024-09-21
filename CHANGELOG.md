@@ -6,7 +6,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [[*next-version*]] - YYYY-MM-DD
 ### Fixed
-- Absence of return typehint for `MapFactoryInterface` (#32).
+- Wrong return typehint for `MapFactoryInterface`
+  and `WritableMapFactoryInterface` (#32).
 
 ## [0.4.0-alpha1] - 2024-09-21
 ### Added
