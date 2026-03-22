@@ -16,5 +16,6 @@ interface WritableContainerFactoryInterface extends ContainerFactoryInterface
      *
      * @return WritableContainerInterface The new container.
      */
+    #[\Override]
     public function createContainerFromArray(array $data): ContainerInterface;
 }
