@@ -10,6 +10,8 @@ use RuntimeException;
  * Something that can check for the existence of an item.
  *
  * @since 0.2
+ *
+ * @template T of mixed
  */
 interface HasItemCapableInterface
 {
@@ -18,7 +20,7 @@ interface HasItemCapableInterface
      *
      * @since 0.2
      *
-     * @param mixed $item The item to check for.
+     * @param T $item The item to check for.
      *
      * @return bool True if the item exists; false otherwise.
      *
