@@ -28,5 +28,5 @@ interface HasItemCapableInterface
      *
      * @psalm-suppress PossiblyUnusedMethod
      */
-    public function hasItem($item): bool;
+    public function hasItem(mixed $item): bool;
 }
