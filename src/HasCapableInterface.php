@@ -14,7 +14,7 @@ interface HasCapableInterface
     /**
      * Determines whether this instance has the specified key.
      *
-     * @param string $key The key to check for.
+     * @param string $id The key to check for.
      *
      * @return bool True if the key exists; false otherwise.
      *
@@ -23,5 +23,5 @@ interface HasCapableInterface
      * @psalm-suppress PossiblyUnusedMethod
      * @psalm-suppress InvalidThrow
      */
-    public function has(string $key): bool;
+    public function has(string $id): bool;
 }
