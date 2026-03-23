@@ -9,6 +9,11 @@ namespace Dhii\Collection;
  *
  * @since 0.2
  *
+ * @template TKey of string
+ * @template-covariant TValue of mixed
+ * @template-extends CountableListInterface<TKey, TValue>
+ * @template-extends MapInterface<TKey, TValue>
+ *
  * @psalm-suppress UnusedClass
  */
 interface CountableMapInterface extends

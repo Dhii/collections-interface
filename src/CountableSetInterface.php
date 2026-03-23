@@ -9,6 +9,10 @@ namespace Dhii\Collection;
  *
  * @since 0.2
  *
+ * @template TValue of mixed
+ * @template-extends CountableListInterface<array-key, TValue>
+ * @template-extends SetInterface<TValue>
+ *
  * @psalm-suppress UnusedClass
  */
 interface CountableSetInterface extends

@@ -16,5 +16,6 @@ interface WritableSetFactoryInterface extends SetFactoryInterface
      *
      * @return WritableSetInterface The new writable set.
      */
+    #[\Override]
     public function createSetFromList(array $list): SetInterface;
 }

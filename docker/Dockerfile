@@ -9,6 +9,7 @@ ARG BUILD_ROOT_PATH
 RUN mv "$PHP_INI_DIR/php.ini-production" "$PHP_INI_DIR/php.ini"
 RUN apt-get update
 RUN apt-get install -y zip unzip curl git
+RUN git config --global --add safe.directory "${BUILD_ROOT_PATH}"
 RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
 RUN php composer-setup.php --install-dir=/usr/bin --filename=composer
 RUN php -r "unlink('composer-setup.php');"
@@ -20,9 +21,10 @@ COPY . ./
 FROM php:${PHP_TEST_VERSION}-cli as test
 
 ARG BUILD_ROOT_PATH
+ARG XDEBUG_VERSION
 
 RUN mv "$PHP_INI_DIR/php.ini-production" "$PHP_INI_DIR/php.ini"
-RUN pecl install xdebug-2.9.8
+RUN pecl install "xdebug-$XDEBUG_VERSION"
 RUN docker-php-ext-install pcntl
 RUN docker-php-ext-install posix
 

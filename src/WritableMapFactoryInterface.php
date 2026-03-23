@@ -16,5 +16,6 @@ interface WritableMapFactoryInterface extends WritableContainerFactoryInterface,
      *
      * @return WritableMapInterface The new map.
      */
+    #[\Override]
     public function createContainerFromArray(array $data): WritableMapInterface;
 }
