@@ -27,7 +27,6 @@ interface MutableContainerInterface extends ContainerInterface
      * @param V $value The value to map to the key.
      *
      * @throws ContainerExceptionInterface If problem mapping.
-     * @psalm-suppress InvalidThrow
      */
     public function set(string $key, mixed $value): void;
 
@@ -40,7 +39,6 @@ interface MutableContainerInterface extends ContainerInterface
      *
      * @throws NotFoundExceptionInterface  If key not found.
      * @throws ContainerExceptionInterface If problem unmapping.
-     * @psalm-suppress InvalidThrow
      */
     public function unset(string $key): void;
 }
