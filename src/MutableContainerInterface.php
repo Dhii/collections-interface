@@ -29,7 +29,7 @@ interface MutableContainerInterface extends ContainerInterface
      * @throws ContainerExceptionInterface If problem mapping.
      * @psalm-suppress InvalidThrow
      */
-    public function set(string $key, $value): void;
+    public function set(string $key, mixed $value): void;
 
     /**
      * Unmaps the value from the specified key.
