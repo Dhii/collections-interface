@@ -14,6 +14,7 @@ use Traversable;
  * @template TKey of string
  * @template-covariant TValue of mixed
  * @template-extends Traversable<TKey, TValue>
+ * @template-extends ContainerInterface<TKey, TValue>
  */
 interface MapInterface extends
     /* @since 0.2 */

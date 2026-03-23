@@ -10,6 +10,10 @@ use Psr\Container\NotFoundExceptionInterface;
 /**
  * A container that can have mappings added and removed.
  *
+ * @template K of string
+ * @template V of mixed
+ * @template-extends ContainerInterface<K, V>
+ *
  * @psalm-suppress UnusedClass
  */
 interface MutableContainerInterface extends ContainerInterface
@@ -19,8 +23,8 @@ interface MutableContainerInterface extends ContainerInterface
      *
      * @since [*next-version*]
      *
-     * @param string $key   The key to map the value to.
-     * @param mixed  $value The value to map to the key.
+     * @param K $key The key to map the value to.
+     * @param V $value The value to map to the key.
      *
      * @throws ContainerExceptionInterface If problem mapping.
      * @psalm-suppress InvalidThrow
@@ -32,7 +36,7 @@ interface MutableContainerInterface extends ContainerInterface
      *
      * @since [*next-version*]
      *
-     * @param string $key The key to unmap the value from.
+     * @param K $key The key to unmap the value from.
      *
      * @throws NotFoundExceptionInterface  If key not found.
      * @throws ContainerExceptionInterface If problem unmapping.
