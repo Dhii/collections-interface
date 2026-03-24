@@ -8,6 +8,11 @@ use Exception;
 
 /**
  * A container that can be written to.
+ *
+ * @template K of string
+ * @template V of mixed
+ *
+ * @template-extends ContainerInterface<K, V>
  */
 interface WritableContainerInterface extends ContainerInterface
 {
@@ -16,7 +21,7 @@ interface WritableContainerInterface extends ContainerInterface
      *
      * @since [*next-version*]
      *
-     * @param array<string, mixed> $mappings A map of keys to values.
+     * @param array<K, V> $mappings A map of keys to values.
      *
      * @return static A new instance of this class with only the specified key-value mappings.
      *
@@ -31,7 +36,7 @@ interface WritableContainerInterface extends ContainerInterface
      *
      * @since [*next-version*]
      *
-     * @param array<string, mixed> $mappings A map of keys to values.
+     * @param array<K, V> $mappings A map of keys to values.
      *
      * @return static A new instance of this class with the specified key-value mappings added to existing ones.
      *
@@ -46,7 +51,7 @@ interface WritableContainerInterface extends ContainerInterface
      *
      * @since [*next-version*]
      *
-     * @param array<string> $keys The keys to exclude.
+     * @param array<K> $keys The keys to exclude.
      *
      * @return static A new instance of this class which does not contain the specified keys.
      *

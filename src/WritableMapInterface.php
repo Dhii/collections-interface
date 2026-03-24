@@ -10,8 +10,9 @@ namespace Dhii\Collection;
  * @since [*next-version*]
  *
  * @template TKey of string
- * @template-covariant TValue of mixed
+ * @template TValue of mixed
  * @template-extends MapInterface<TKey, TValue>
+ * @template-extends WritableContainerInterface<TKey, TValue>
  */
 interface WritableMapInterface extends MapInterface, WritableContainerInterface
 {

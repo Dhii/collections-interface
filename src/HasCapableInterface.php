@@ -8,20 +8,20 @@ use Psr\Container\ContainerExceptionInterface;
 
 /**
  * Something that can determine the existence of a key.
+ *
+ * @template K of string
  */
 interface HasCapableInterface
 {
     /**
      * Determines whether this instance has the specified key.
      *
-     * @param string $id The key to check for.
-     *
+     * @param K $id The key to check for.
      * @return bool True if the key exists; false otherwise.
      *
      * @throws ContainerExceptionInterface If problem determining.
      *
      * @psalm-suppress PossiblyUnusedMethod
-     * @psalm-suppress InvalidThrow
      */
     public function has(string $id): bool;
 }

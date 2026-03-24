@@ -14,7 +14,14 @@ interface WritableMapFactoryInterface extends WritableContainerFactoryInterface,
     /**
      * @inheritDoc
      *
-     * @return WritableMapInterface The new map.
+     * @template K of string
+     * @template V of mixed
+     *
+     * @param array<K, V> $data The data for the container.
+     *
+     * @return WritableMapInterface<K, V> The new container.
+     *
+     * @psalm-suppress MoreSpecificImplementedParamType PSR-11 does not declare generics, but should
      */
     #[\Override]
     public function createContainerFromArray(array $data): WritableMapInterface;
