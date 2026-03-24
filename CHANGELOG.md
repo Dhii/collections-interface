@@ -7,6 +7,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ## [[*next-version*]] - YYYY-MM-DD
 ### Changed
 - Aligned param names with those of PSR interfaces (#37).
+- Added more generics (#38).
 
 ## [0.5.0-beta1] - 2026-03-23
 ### Changed
