@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace Dhii\Collection;
 
 use Exception;
-use Psr\Container\ContainerInterface;
 
 /**
  * Creates containers based on data maps.

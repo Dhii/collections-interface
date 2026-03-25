@@ -9,6 +9,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - Aligned param names with those of PSR interfaces (#37).
 - Added more generics (#38).
 - Added `mixed` typehints where missing (#38).
+- Factories now return Dhii `ContainerInterface` (#39).
+  A small inconvenience for type safety.
 
 ## [0.5.0-beta1] - 2026-03-23
 ### Changed
