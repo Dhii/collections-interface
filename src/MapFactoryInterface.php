@@ -16,9 +16,12 @@ interface MapFactoryInterface extends ContainerFactoryInterface
     /**
      * Creates a map based on data in an array.
      *
-     * @param array<string, mixed> $data The data to base the map on.
+     * @template K of string
+     * @template V of mixed
      *
-     * @return MapInterface The new map.
+     * @param array<K, V> $data The data for the container.
+     *
+     * @return MapInterface<K, V> The new container.
      *
      * @throws Exception If problem creating.
      */

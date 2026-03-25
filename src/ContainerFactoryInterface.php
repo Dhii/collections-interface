@@ -15,9 +15,12 @@ interface ContainerFactoryInterface
     /**
      * Creates a container based on data.
      *
-     * @param array<string, mixed> $data The data for the container.
+     * @template K of string
+     * @template V of mixed
      *
-     * @return ContainerInterface The new container.
+     * @param array<K, V> $data The data for the container.
+     *
+     * @return WritableContainerInterface<K, V> The new container.
      *
      * @throws Exception If problem creating.
      *
