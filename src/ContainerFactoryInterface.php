@@ -20,7 +20,7 @@ interface ContainerFactoryInterface
      *
      * @param array<K, V> $data The data for the container.
      *
-     * @return WritableContainerInterface<K, V> The new container.
+     * @return ContainerInterface<K, V> The new container.
      *
      * @throws Exception If problem creating.
      *
