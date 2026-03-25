@@ -4,8 +4,6 @@ declare(strict_types=1);
 
 namespace Dhii\Collection;
 
-use Psr\Container\ContainerInterface;
-
 /**
  * A map that can create a writable container.
  */
